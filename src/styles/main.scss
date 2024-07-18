@@ -5,7 +5,3 @@
 html {
   @include scrollbar;
 }
-
-html, body, #app {
-  @include flex($d: column);
-}

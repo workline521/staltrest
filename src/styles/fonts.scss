@@ -1,35 +1,36 @@
 @font-face {
-  font-family: "Golos Text";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("src/assets/fonts/GolosText-Regular.ttf") format("truetype");
+  src: url("src/assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Golos Text";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("src/assets/fonts/GolosText-Medium.ttf") format("truetype");
+  src: url("src/assets/fonts/Montserrat-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Golos Text";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("src/assets/fonts/GolosText-SemiBold.ttf") format("truetype");
+  src: url("src/assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Golos Text";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("src/assets/fonts/GolosText-Bold.ttf") format("truetype");
+  src: url("src/assets/fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
 body {
-  font-family: 'Golos Text', sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 135%;
 }
