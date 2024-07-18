@@ -1,0 +1,45 @@
+@import "src/styles/variables";
+
+@mixin flex($a:'unset', $j:'unset', $d:'unset', $w:'unset') {
+  display: flex;
+  @if ($a != 'unset') {
+    align-items: $a;
+  }
+  @if ($j != 'unset') {
+    justify-content: $j;
+  }
+  @if ($d != 'unset') {
+    flex-direction: $d;
+  }
+  @if ($w!='unset') {
+    flex-wrap: $w;
+  }
+}
+
+@mixin notLastChild {
+  & > :not(:last-child) {
+    @content;
+  }
+}
+
+@mixin lineClamp($lines: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin scrollbar {
+  @media screen and (any-hover: hover) {
+    &::-webkit-scrollbar {
+      width: 10px
+    }
+    &::-webkit-scrollbar-track {
+      background: white;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #51504f;
+      border: 3px solid white;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "src/styles/shared";
+@import "src/styles/fonts.scss";
+@import "src/styles/ui";
+
+html {
+  @include scrollbar;
+}
+
+html, body, #app {
+  @include flex($d: column);
+}

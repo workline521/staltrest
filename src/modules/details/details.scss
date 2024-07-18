@@ -1,0 +1,40 @@
+@import "src/styles/shared";
+
+@mixin compensateScrollbar() {
+  :not(.is-closing).open.has-vertical-scrollbar & {
+    @content
+  }
+}
+
+//details, summary {
+//  display: unset;
+//  width: auto;
+//  padding-left: unset;
+//}
+
+.details {
+  &-summary {
+    padding-left: unset;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &-button {
+    transition: transform 0.5s;
+
+    .is-opening &, .open & {
+      transform: rotate(90deg);
+    }
+
+    .is-closing & {
+      transform: none;
+    }
+  }
+
+  &-body {
+    @include flex($d: column);
+    padding-top: 0.5em;
+  }
+}

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("src/assets/fonts/GolosText-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("src/assets/fonts/GolosText-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("src/assets/fonts/GolosText-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("src/assets/fonts/GolosText-Bold.ttf") format("truetype");
+}
+
+body {
+  font-family: 'Golos Text', sans-serif;
+}

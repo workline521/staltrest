@@ -1,0 +1,32 @@
+@import "src/styles/shared";
+
+[type=checkbox], [type=radio] {
+  border: 1px solid #82756e;
+  overflow: hidden;
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5em;
+  transition: background-color 0.25s;
+  border-radius: 4px;
+
+  &:checked {
+    background: #82756e;
+
+    &::before {
+      transform: scale(1);
+    }
+  }
+
+  &::before {
+    content: " ";
+    background: #82756e;
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0.25s;
+  }
+}
+
+[type=radio] {
+  border-radius: 50%;
+}

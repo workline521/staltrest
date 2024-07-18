@@ -1,0 +1,19 @@
+@import "src/styles/variables";
+
+@mixin mediaTablet {
+  @media screen and (min-width: $breakpointTablet) {
+    @content;
+  }
+}
+
+@mixin mediaLaptop {
+  @media screen and (min-width: $breakpointLaptop) {
+    @content;
+  }
+}
+
+@mixin mediaDesktop {
+  @media screen and (min-width: $breakpointDesktop) {
+    @content;
+  }
+}
