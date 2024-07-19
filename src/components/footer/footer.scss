@@ -1,5 +1,56 @@
 @import "src/styles/shared";
 
 .footer{
-
+    padding-top: 60px;
+    padding-bottom: 30px; 
+    background: #1e212e;
+    &__top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu-wrap{ 
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .footer__logo{
+            display: block;
+            margin-right: 110px;
+        }
+        a {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: #fff; 
+        }
+    }
+    &__bottom{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 54px;
+    }
+    &__txt{
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.5);
+        &:nth-child(1){
+            width: 23%;
+        }
+        &:nth-child(2){
+            width: 36%;
+        }
+        &:nth-child(3){
+            width: 33%;
+        }
+    }
+    &__policy{
+        display: block;
+        font-size: 14px;
+        line-height: 130%;
+        color: #fff;
+    }
 }

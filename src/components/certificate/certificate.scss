@@ -1,0 +1,109 @@
+@import "src/styles/shared";
+
+.cert{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: #f1f4fb;
+        z-index: -1;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: #cad0e4;
+        z-index: -1;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 104px;
+        padding-bottom: 104px;
+    }
+    &__left{
+        width: 50%;
+    }
+    &__desc{
+        margin-top: 50px;
+        font-size: 24px;
+        line-height: 120%;
+        color: #000;
+        max-width: 530px;
+    }
+    &__right{
+        width: 50%;
+    }
+    &__thumbs{
+        width: 348px;
+        margin-left: 0;
+        margin-top: 37px;
+        .swiper-slide{            
+            opacity: 0.4;
+            border: 1px solid transparent;
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 84px;
+                height: 118px;
+                object-fit: cover;
+                border-top: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+            }
+        }
+        .swiper-slide-thumb-active{
+            opacity: 1;
+            border: 1px solid #008AAB;
+        }
+    }
+    &__swiper{
+        width: 100%;
+        max-width: 380px;
+        margin-left: 86px;
+        .swiper-slide{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            img{
+                display: block;
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                max-height: 425px;
+                box-shadow: 0 0 20px 0 rgba(30, 33, 46, 0.17);
+            }
+        }
+        .swiper-button-prev{
+            width: 24px;
+            height: 41px;
+            background: url('src/assets/img/arr-l.svg') no-repeat center;
+            background-size: contain;
+            left: 0;
+            margin-top: -20px;
+            &::after {
+                display: none;
+            }
+        }
+        .swiper-button-next{
+            width: 24px;
+            height: 41px;
+            background: url('src/assets/img/arr-r.svg') no-repeat center;
+            background-size: contain;
+            right: 0;
+            margin-top: -20px;
+            &::after{
+                display: none;
+            }
+        }
+    }
+}

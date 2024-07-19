@@ -1,0 +1,43 @@
+@import "src/styles/shared";
+
+.advantage{
+    padding: 130px 0;
+    background: #f1f4fb;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px 34px;
+    }
+    &__item{
+        border: 1px solid rgba(63, 73, 108, 0.4);
+        border-radius: 10px;
+        backdrop-filter: blur(30px);
+        background: rgba(228, 228, 228, 0.38);
+        padding: 45px 30px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #000;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 15px;
+            left: 15px;
+            width: 30px;
+            height: 32px;
+            background: url('src/assets/img/line1.svg') no-repeat center;
+            background-size: contain;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            bottom: 15px;
+            right: 15px;
+            width: 30px;
+            height: 32px;
+            background: url('src/assets/img/line2.svg') no-repeat center;
+            background-size: contain;
+        }
+    }
+}
