@@ -2,6 +2,10 @@
 
 .cert{
     position: relative;
+    overflow: hidden;
+    @include mediaMobile {
+        background: #f1f4fb;
+    }
     &::before{
         position: absolute;
         content: '';
@@ -11,6 +15,12 @@
         height: 100%;
         background: #f1f4fb;
         z-index: -1;
+        @include mediaTablet {
+            width: 100%;
+        }
+        @include mediaMobile {
+            display: none;
+        }
     }
     &::after{
         position: absolute;
@@ -21,15 +31,36 @@
         height: 100%;
         background: #cad0e4;
         z-index: -1;
+        @include mediaTablet {
+            display: none;
+        }
     }
     .container{
         display: flex;
         flex-wrap: wrap;
         padding-top: 104px;
         padding-bottom: 104px;
+        @include mediaLaptop {
+            padding-top: 88px;
+            padding-bottom: 88px;
+        }
+        @include mediaTablet {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
     &__left{
         width: 50%;
+        padding-top: 30px;
+        @include mediaMobile {
+            width: 100%;
+        }
+        @include mediaTablet {
+            padding-top: 40px;
+        }
+        @include mediaMobile {
+            padding-top: 0;
+        }
     }
     &__desc{
         margin-top: 50px;
@@ -37,14 +68,37 @@
         line-height: 120%;
         color: #000;
         max-width: 530px;
+        @include mediaLaptop {
+            margin-top: 40px;
+        }
+        @include mediaTablet {
+            font-size: 16px;
+            line-height: 150%;
+            max-width: 330px;
+        }
+        @include mediaMobile {
+            font-size: 14px;
+            line-height: 143%;
+            margin-top: 12px;
+        }
     }
     &__right{
         width: 50%;
+        @include mediaMobile {
+            width: 100%;
+        }
     }
     &__thumbs{
         width: 348px;
         margin-left: 0;
         margin-top: 37px;
+        @include mediaMobile {
+            width: 100%;
+            max-width: 348px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 12px;
+        }
         .swiper-slide{            
             opacity: 0.4;
             border: 1px solid transparent;
@@ -58,6 +112,14 @@
                 border-bottom: 7px solid transparent;
                 border-left: 5px solid transparent;
                 border-right: 5px solid transparent;
+                @include mediaTablet {
+                    border-top: 6px solid transparent;
+                    border-bottom: 6px solid transparent;
+                }
+                @include mediaMobile {
+                    width: 100%;
+                    max-width: 72px;
+                }
             }
         }
         .swiper-slide-thumb-active{
@@ -69,11 +131,26 @@
         width: 100%;
         max-width: 380px;
         margin-left: 86px;
+        @include mediaTablet {
+            margin-left: 22px;
+            max-width: 340px;
+        }
+        @include mediaMobile {
+            max-width: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
         .swiper-slide{
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 30px;
+            @include mediaTablet {
+                padding: 20px;
+            }
+            @include mediaMobile {
+                padding: 20px 40px;
+            }
             img{
                 display: block;
                 width: 100%;
@@ -93,6 +170,12 @@
             &::after {
                 display: none;
             }
+            @include mediaTablet {
+                display: none;
+            }
+            @include mediaMobile {
+                display: block;
+            }
         }
         .swiper-button-next{
             width: 24px;
@@ -103,6 +186,12 @@
             margin-top: -20px;
             &::after{
                 display: none;
+            }
+            @include mediaTablet {
+                display: none;
+            }
+            @include mediaMobile {
+                display: block;
             }
         }
     }

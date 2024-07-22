@@ -3,10 +3,26 @@
 .advantage{
     padding: 130px 0;
     background: #f1f4fb;
-    .container{
+    @include mediaLaptop {
+        padding: 60px 0;
+    }
+    @include mediaTablet {
+        padding: 40px 0;
+    }
+    &__container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px 34px;
+        margin-top: 40px;
+        
+        @include mediaLaptop {
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        @include mediaMobile {
+            display: block;
+            margin-top: 24px;
+        }
     }
     &__item{
         border: 1px solid rgba(63, 73, 108, 0.4);
@@ -19,6 +35,12 @@
         line-height: 120%;
         color: #000;
         position: relative;
+        @include mediaMobile {
+            margin-bottom: 8px;
+            padding: 23px;
+            font-size: 14px;
+            line-height: 143%;
+        }
         &::before{
             position: absolute;
             content: '';

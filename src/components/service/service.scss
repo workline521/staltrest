@@ -1,0 +1,48 @@
+@import "src/styles/shared";
+
+.service{
+    padding-top: 246px;
+    padding-bottom: 130px;
+    overflow: hidden;
+    &__items{
+        margin-top: 90px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            top: -335px;
+            right: -110px;
+            width: 492px;
+            height: 477px;
+            background: url('src/assets/img/service.png') no-repeat center;
+            object-fit: contain;
+            z-index: 0;
+        }
+    }
+    &__item{
+        position: relative;
+        z-index: 1;
+        padding: 44px 29px;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 120%;
+        color: #1e212e;
+        border: 1px solid rgba(63, 73, 108, 0.4);
+        border-radius: 10px;
+        backdrop-filter: blur(30px);
+        background: rgba(228, 228, 228, 0.38);
+        &:after{
+            position: absolute;
+            content: '';
+            top: 15px;
+            left: 15px;
+            width: 30px;
+            height: 32px;
+            background: url('src/assets/img/line-about.svg') no-repeat center;
+            background-size: contain;            
+        }
+    }
+}

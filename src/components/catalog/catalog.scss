@@ -1,0 +1,49 @@
+@import "src/styles/shared";
+
+.cat{
+    padding-top: 240px;
+    padding-bottom: 162px;
+    &__info{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__download{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        background: linear-gradient(90deg, #008aab 0%, #00b2dc 100%);
+        border-radius: 4px;
+        width: 400px;
+        height: 60px;
+        margin-left: 34px;
+        img{
+            display: block;
+            margin-right: 49px;
+        }
+    }
+    .product__items{
+        margin-top: 90px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            top: -250px;
+            right: -50px;
+            width: 449px;
+            height: 468px;
+            background: url('src/assets/img/cat-icon2.png') no-repeat center;
+            background-size: contain;
+            z-index: -1;
+        }
+    }
+    .product__item{
+        background: rgba(228, 228, 228, 0.38);
+    }
+}

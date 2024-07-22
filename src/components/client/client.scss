@@ -3,12 +3,32 @@
 .client{
     padding-top: 130px;
     padding-bottom: 130px;
+    @include mediaLaptop {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include mediaTablet {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     &__items{
         margin-top: 40px;
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px;
+        @include mediaLaptop {
+            gap: 32px;
+            margin-top: 32px;
+        }
+        @include mediaTablet {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include mediaMobile {
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 24px;
+        }
         &::before{
             position: absolute;
             content: '';
@@ -19,6 +39,24 @@
             background: url('src/assets/img/3d-icon1.png') no-repeat center;
             background-size: contain;
             z-index: 0;
+            @include mediaLaptop {
+                width: 287px;
+                height: 295px;
+                top: -160px;
+                right: 70px;
+            }
+            @include mediaTablet {
+                width: 211px;
+                height: 227px;
+                top: -130px;
+                right: -40px;
+            }
+            @include mediaMobile {
+                width: 130px;
+                height: 140px;
+                top: -65px;
+                right: -30px;
+            }
         }
         &::after{
             position: absolute;
@@ -30,6 +68,22 @@
             background: url('src/assets/img/3d-icon2.png') no-repeat center;
             background-size: contain;
             z-index: 0;
+            @include mediaLaptop {
+                bottom: -110px;
+                left: 80px;
+            }
+            @include mediaTablet {
+                width: 274px;
+                height: 265px;
+                bottom: -100px;
+                left: 99px;
+            }
+            @include mediaMobile {
+                width: 164px;
+                height: 152px;
+                bottom: -75px;
+                left: 75px;
+            }
         }
     }
     &__item{
@@ -41,14 +95,21 @@
         background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(30px);
         overflow: hidden;
-        min-height: 250px;
+        height: 250px;
         position: relative;
         z-index: 1;
+        @include mediaLaptop {
+            height: 183px;
+        }
         img{
             display: block;
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
+            @include mediaLaptop {
+                max-width: 81%;
+                max-height: 81%;
+            }
         }
     }
 }

@@ -9,8 +9,8 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": false,
-    "module": "ES2022",
-    "target": "ES2015",
+    "module": "es6",
+    "target": "es5",
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
@@ -32,10 +32,5 @@
     ".idea",
     ".vscode",
     "**/*.spec.ts"
-  ],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
-  }
+  ]
 }

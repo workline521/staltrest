@@ -1,6 +1,7 @@
 @import "src/styles/shared";
 
 .info{
+    overflow: hidden;
     &__slider{
         display: block;
         width: 100%;
@@ -10,6 +11,14 @@
         position: relative;
         height: 760px;
         padding-top: 247px;
+        @include mediaLaptop {
+            height: 600px;
+            padding-top: 215px;
+        }
+        @include mediaMobile {
+            height: 300px;
+            padding-top: 129px;
+        }
     }
     &__bg {
         display: block;
@@ -29,6 +38,20 @@
         position: relative;
         z-index: 1;
         max-width: 890px;
+        @include mediaLaptop {
+            font-size: 48px;
+            max-width: 450px;
+        }
+        @include mediaTablet {
+            font-size: 40px;
+            line-height: 120%;
+            max-width: 440px;
+        }
+        @include mediaMobile {
+            font-size: 24px;
+            line-height: 1.33;
+            max-width: 335px;
+        }
         span{
             color: #008aab;
         }
@@ -49,5 +72,8 @@
     }
     .swiper-pagination{
         bottom: 59px !important;
+        @include mediaTablet {
+            bottom: 33px !important;
+        }
     }
 }
