@@ -309,7 +309,9 @@
         }
     }
     &-body .header .nav__logo {
-        background: url('src/assets/img/logo-main.svg') no-repeat center;
-        background-size: contain;
+        @include mediaTablet {                
+            background: url('src/assets/img/logo-main.svg') no-repeat center;
+            background-size: contain;
+        }
     }
 }

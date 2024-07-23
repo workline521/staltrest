@@ -75,7 +75,11 @@ h1, h2{
     &__phone-wrap{
         display: flex;
         align-items: center;
-    }
+        @include mediaMobile {
+            width: 100%;
+            justify-content: center;
+        }
+}
     &__menu-wrap {
         display: flex;
         flex-wrap: wrap;
@@ -92,6 +96,9 @@ h1, h2{
             line-height: 19px;
             text-transform: uppercase;
             color: #fff;
+            @media (max-width: 374px){
+                font-size: 14px;
+            }
         }
         .header__call{
             @include mediaMobile {
@@ -232,6 +239,7 @@ h1, h2{
         @include mediaMobile {
             margin-top: 40px;
             margin-right: 0;
+            color: #fff;
         }
     }
     &__logo{

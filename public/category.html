@@ -21,15 +21,14 @@
     </head>
     <body>
         <header class="header">
-            <div class="container">
-                <a href="/" class="header__logo-mobile">
-                    <img src="src/assets/img/logo-mobile.svg" alt="logo">
-                </a>
+            <div class="container">                
                 <div class="header__menu">
                     <div class="header__menu-wrap">
-                        <img class="header__menu-phone" src="src/assets/img/phone.svg" alt="logo">
-                        <a href="tel:+74992632120">+7 (499) 263-21-20,&nbsp;</a>
-                        <a href="tel:+74992632659">+7 (499) 263-26-59</a>
+                        <div class="header__phone-wrap">
+                            <img class="header__menu-phone" src="src/assets/img/phone.svg" alt="logo">
+                            <a href="tel:+74992632120">+7 (499) 263-21-20,&nbsp;</a>
+                            <a href="tel:+74992632659">+7 (499) 263-26-59</a>
+                        </div>
                         <button type="button" class="header__call">Заказать звонок</button>
                     </div>
                     <a class="header__mail" href="mailto:sttr@zmail.ru">
@@ -37,11 +36,6 @@
                         <span>sttr@zmail.ru</span>
                     </a>
                 </div>
-                <button type="button" class="header__burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
             <div class="nav">
                 <div class="container">
@@ -58,6 +52,17 @@
                 </div>
             </div>
         </header>
+        <div class="header__mobile">
+            <a href="/" class="header__mobile-logo"></a>
+            <button type="button" class="header__burger">
+                <span>
+                    <img src="src/assets/img/header-burger.svg" alt="icon">
+                </span>
+                <span>
+                    <img src="src/assets/img/header-close.svg" alt="icon">
+                </span>
+            </button>
+        </div>
 
         <main class="main">
             <section class="category">
@@ -86,7 +91,7 @@
                                 <span>Подробнее</span>
                                 <img src="src/assets/img/arr-d.png" alt="img">
                             </span>
-                            <img class="product__pic" src="src/assets/img/subcategory1.png" alt="img">
+                            <img class="product__pic" src="src/assets/img/c11.png" alt="img">
                         </a>
                         <a href="subcategory6.html" class="product__item">
                             <span class="product__name">Коронки с конусным соединением</span>
@@ -94,7 +99,7 @@
                                 <span>Подробнее</span>
                                 <img src="src/assets/img/arr-d.png" alt="img">
                             </span>
-                            <img class="product__pic" src="src/assets/img/subcategory2.png" alt="img">
+                            <img class="product__pic" src="src/assets/img/c2.png" alt="img">
                         </a>
                         <a href="subcategory8.html" class="product__item">
                             <span class="product__name">Коронки для пневмоударников</span>
@@ -102,7 +107,7 @@
                                 <span>Подробнее</span>
                                 <img src="src/assets/img/arr-d.png" alt="img">
                             </span>
-                            <img class="product__pic" src="src/assets/img/subcategory3.png" alt="img">
+                            <img class="product__pic" src="src/assets/img/c3.png" alt="img">
                         </a>
                         <a href="subcategory9.html" class="product__item">
                             <span class="product__name">Коронки – расширители</span>
@@ -110,7 +115,7 @@
                                 <span>Подробнее</span>
                                 <img src="src/assets/img/arr-d.png" alt="img">
                             </span>
-                            <img class="product__pic" src="src/assets/img/subcategory4.png" alt="img">
+                            <img class="product__pic" src="src/assets/img/c4.png" alt="img">
                         </a>
                         <a href="subcategory.html" class="product__item">
                             <span class="product__name">Муфты</span>
@@ -118,7 +123,7 @@
                                 <span>Подробнее</span>
                                 <img src="src/assets/img/arr-d.png" alt="img">
                             </span>
-                            <img class="product__pic" src="src/assets/img/subcategory4.png" alt="img">
+                            <img class="product__pic" src="src/assets/img/c4.png" alt="img">
                         </a>
                         <a href="subcategory2.html" class="product__item">
                             <span class="product__name">Хвостовики</span>
@@ -126,7 +131,7 @@
                                 <span>Подробнее</span>
                                 <img src="src/assets/img/arr-d.png" alt="img">
                             </span>
-                            <img class="product__pic" src="src/assets/img/subcategory4.png" alt="img">
+                            <img class="product__pic" src="src/assets/img/c4.png" alt="img">
                         </a>
                         <a href="subcategory3.html" class="product__item">
                             <span class="product__name">Штанги для ручного перфораторного и машинного бурения</span>
@@ -134,7 +139,7 @@
                                 <span>Подробнее</span>
                                 <img src="src/assets/img/arr-d.png" alt="img">
                             </span>
-                            <img class="product__pic" src="src/assets/img/subcategory4.png" alt="img">
+                            <img class="product__pic" src="src/assets/img/c4.png" alt="img">
                         </a>
                         <a href="subcategory4.html" class="product__item">
                             <span class="product__name">Инструмент для станков буровых шарошечных и пневмоударных</span>
@@ -142,7 +147,7 @@
                                 <span>Подробнее</span>
                                 <img src="src/assets/img/arr-d.png" alt="img">
                             </span>
-                            <img class="product__pic" src="src/assets/img/subcategory4.png" alt="img">
+                            <img class="product__pic" src="src/assets/img/c4.png" alt="img">
                         </a>
                         <a href="subcategory5.html" class="product__item">
                             <span class="product__name">Инструмент для вскрытия леток</span>
@@ -150,7 +155,7 @@
                                 <span>Подробнее</span>
                                 <img src="src/assets/img/arr-d.png" alt="img">
                             </span>
-                            <img class="product__pic" src="src/assets/img/subcategory4.png" alt="img">
+                            <img class="product__pic" src="src/assets/img/c4.png" alt="img">
                         </a>                        
                     </div>
                 </div>
@@ -217,8 +222,10 @@
                         127030, г. Москва, ул. Новослободская, д. 20,помещ. 26/12, ком. 15, офис М-25. 
                     </div>
                     <div class="footer__txt">ИНН 7707377269, КПП 770701001 <br> Филиал «Центральный» Банка ВТБ (ПАО) в&nbsp;г. Москве. БИК 044525411, к/с 30101810145250000411, ОКПО 0611167</div>
+                    <div class="footer__txt">
+                        <a href="#" class="footer__policy">Политика Конфиденциальности</a>
+                    </div>
                 </div>
-                <a href="#" class="footer__policy">Политика Конфиденциальности</a>
             </div>            
         </footer>
         <div class="popup__overlay"></div>
