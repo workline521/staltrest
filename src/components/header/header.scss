@@ -1,5 +1,7 @@
 @import "src/styles/shared";
-
+a:visited {
+    color: inherit;
+}
 h1, h2{
     font-weight: 700;
     font-size: 48px;
@@ -256,13 +258,6 @@ h1, h2{
             display: none;
         }
     }
-    &--front-page .nav__logo{
-        background: url('src/assets/img/logo-main.svg') no-repeat center;
-        background-size: contain;
-    }   
-    &--front-page .nav__link{
-        color: #fff;
-    }
     &--subcategory .nav__link{
         color: #fff;
     }
@@ -434,4 +429,12 @@ h1, h2{
         display: none;
         opacity: 0;
     }
+}
+.page-template-home .nav__logo {
+    background: url('src/assets/img/logo-main.svg') no-repeat center;
+    background-size: contain;
+}
+
+.page-template-home .nav__link {
+    color: #fff;
 }

@@ -65,7 +65,30 @@
                 width: 107px;
             }         
             @include mediaMobile {
-                width: 44%;
+                width: 48%;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            background: #1e212e url('src/assets/img/p-bg2.png') no-repeat center;
+            background-size: cover;
+            z-index: 0;
+            transition: right 0.3s ease;
+            @media (max-width: 1439px) {
+                width: 236px;
+                right: -236px;
+                background-color: #1e212e;
+                background-image: url('src/assets/img/p-bg2.png');
+                background-size: auto;
+                background-position: left center;
+            }
+            @media (max-width: 1199px) {
+                display: none;
             }
         }
         &:hover{
@@ -79,6 +102,11 @@
                     opacity: 1;
                 }
             }
+            &::before{
+                @media (min-width: 1200px) {
+                    right: 0;
+                }
+            }
         }
     }
     &__name{
@@ -87,7 +115,7 @@
         font-size: 24px;
         line-height: 120%;
         color: #000;
-        max-width: 270px;
+        max-width: 190px;
         transition: color 0.3s ease;
         @include mediaLaptop {
             font-size: 20px;
@@ -116,6 +144,7 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #008aab;
+        margin-top: auto;
         span{
             transition: opacity 0.3s ease;
             opacity: 0;
