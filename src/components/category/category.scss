@@ -1,21 +1,23 @@
 @import "src/styles/shared";
 
 .category{
-    padding-top: 190px;
-    padding-bottom: 164px;
-    position: relative;
-    @include mediaLaptop {
-        padding-top: 124px;
-        padding-bottom: 60px;
-    }
+    &-block{
+        padding-top: 190px;
+        padding-bottom: 164px;
+        position: relative;
+        @include mediaLaptop {
+            padding-top: 124px;
+            padding-bottom: 60px;
+        }
 
-    @include mediaTablet {
-        padding-top: 80px;
-        padding-bottom: 40px;
-    }
+        @include mediaTablet {
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
 
-    @include mediaMobile {
-        padding-top: 40px;
+        @include mediaMobile {
+            padding-top: 40px;
+        }
     }
     &__wrap{
         display: flex;

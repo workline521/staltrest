@@ -55,6 +55,28 @@
         span{
             color: #008aab;
         }
+        h1, h2{
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 100%;
+            color: #fff;
+            @include mediaLaptop {
+                font-size: 48px;
+                max-width: 450px;
+            }
+        
+            @include mediaTablet {
+                font-size: 40px;
+                line-height: 120%;
+                max-width: 440px;
+            }
+        
+            @include mediaMobile {
+                font-size: 24px;
+                line-height: 1.33;
+                max-width: 335px;
+            }
+        }
     }
     .swiper-pagination-bullet{
         width: 12px !important;

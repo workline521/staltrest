@@ -155,9 +155,12 @@
                 display: block;
                 width: 100%;
                 max-width: 300px;
-                height: auto;
-                max-height: 425px;
+                height: 425px;                
                 box-shadow: 0 0 20px 0 rgba(30, 33, 46, 0.17);
+                object-fit: cover;
+                @include mediaMobile {
+                    height: 351px;
+                }
             }
         }
         .swiper-button-prev{

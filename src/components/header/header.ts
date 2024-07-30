@@ -30,4 +30,3 @@ burger.addEventListener('click', () => {
   body.classList.toggle('show')
   burger.classList.toggle('show')
 })
-

@@ -51,7 +51,7 @@
                 object-fit: contain;
             }
         }
-        a {
+        a, span {
             font-weight: 700;
             font-size: 16px;
             line-height: 19px;
@@ -81,9 +81,11 @@
         align-items: flex-start;
         justify-content: space-between;
         margin-top: 54px;
+        @include mediaTablet {
+            margin-top: 20px;
+        }
         @include mediaMobile {
             display: block;
-            margin-top: 20px;
         }
     }
     &__txt{
